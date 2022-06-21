@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Join | ChatApp</title>
 </head>
-<body>
-    <h1>Hello world</h1>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
-</body>
+<body class="centered-form">
+    <div class="center-form__form">
+        <form action="./chat.html">
+            <div class="form-field"><h3>Join chat</h3></div>
+            <div class="form-field">
+                <label>Display name</label>
+                <input type="text" name="name" autofocus>
+            </div>
+            <div class="form-field">
+                <label>Room name</label>
+                <input type="text" name="room" autofocus>
+            </div>
+            <div class="form-field">
+                <button>Join</button>
+            </div>
+        </form>
+    </div>
+ </body>
 </html>
